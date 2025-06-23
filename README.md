@@ -8,7 +8,7 @@ não identificava, busquei auxilio no IA, e até reiniciar o notebook. ATÉ QUE 
 
 Decidi pesquisar mais a fundo sobre o assunto ^.^,
 
-from google.colab é usada em notebooks do Google Colab para importar funcionalidades específicas da plataforma. 
+# from google.colab é usada em notebooks do Google Colab para importar funcionalidades específicas da plataforma. 
 
 
 O Google Colab é um ambiente gratuito do Google que permite executar código Python na nuvem com recursos de GPU,
@@ -16,7 +16,7 @@ ideal para aprendizado de máquina, ciência de dados e educação.
 
 SINTAXE COMPLETA 
 
-"from google.colab import drive"
+# from google.colab import drive
 
 Significado detalhado:
 from google.colab: você está acessando o módulo interno chamado google.colab, que só existe dentro do Google Colab.
@@ -27,28 +27,25 @@ Exemplos comuns:
 Montar o Google Drive no Colab:
 
 python
-Copiar
-Editar
-from google.colab import drive
-drive.mount('/content/drive')
+
+# from google.colab import drive
+# drive.mount('/content/drive')
 Isso cria uma pasta no ambiente do Colab que dá acesso aos seus arquivos do Google Drive.
 
 Importar arquivos de interface para upload:
 
 python
-Copiar
-Editar
-from google.colab import files
-uploaded = files.upload()
+
+# from google.colab import files
+# uploaded = files.upload()
 Isso permite que você envie arquivos do seu computador para o notebook.
 
 Executar comandos de shell no ambiente:
 Embora não use from google.colab, Colab também aceita comandos com !, por exemplo:
 
 python
-Copiar
-Editar
-!pip install pandas
+
+# !pip install pandas
 Observação importante:
 Se você tentar usar from google.colab fora do Colab (por exemplo, no Jupyter local), ele vai dar erro porque o pacote google.colab só existe no ambiente do Colab.
 Eu utilizava o kaggle.com onde inseria e armazenava meus dados, até que um belo dia , ele travou muito , um mentor de dados me disse " - Pq você não usa o colab ele é FÁCIL, testa e me fala!" 
