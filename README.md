@@ -1,4 +1,3 @@
-# google.colab.import
 
 # É no problema que aprendemos mais sobre problemas ! 
 
