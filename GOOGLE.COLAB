@@ -1,0 +1,58 @@
+import os
+print(os.listdir('/content')) 
+
+import os
+os.listdir('/content')
+
+import pandas as pd
+channels_df = pd.read_csv('/content/channels.csv')  # Substitua se o nome for diferente
+channels_df.head()
+
+import sqlite3
+conn = sqlite3.connect(":memory:")
+cursor = conn.cursor() 
+
+from google.colab import files
+
+uploaded = files.upload()
+deliveries_df = pd.read_csv('/content/deliveries.csv')
+deliveries_df.head()
+
+from google.colab import files
+
+uploaded = files.upload()
+drivers_df = pd.read_csv('/content/drivers.csv')
+drivers_df.head()
+
+from google.colab import files
+
+uploaded = files.upload()
+hubs_df = pd.read_csv('/content/hubs.csv', encoding='ISO-8859-1')
+hubs_df.head()
+
+from google.colab import files
+
+uploaded = files.upload()
+orders_df = pd.read_csv('/content/orders.csv')
+orders_df.head()
+
+from google.colab import files
+
+uploaded = files.upload()
+payments_df = pd.read_csv('/content/payments.csv')
+payments_df.head()
+
+from google.colab import files
+
+uploaded = files.upload()
+stores_df = pd.read_csv('/content/payments.csv')
+stores_df.head()
+
+
+
+
+
+
+
+
+
